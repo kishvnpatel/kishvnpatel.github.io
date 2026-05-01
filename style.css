@@ -65,7 +65,7 @@ nav a:hover { color: #fff; }
     display: grid;
     /* This creates exactly 2 columns */
     grid-template-columns: 1fr 1fr; 
-    gap: 40px; /* Space between the videos */
+    gap: 20px; /* Space between the videos */
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
