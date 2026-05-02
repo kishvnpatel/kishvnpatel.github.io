@@ -127,3 +127,94 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* Container for the About section */
+.about-container {
+    max-width: 1100px; /* Limits width so text doesn't stretch too far */
+    margin: 60px auto; /* Centers the container and adds space below the header */
+    padding: 0 40px;
+}
+
+/* The Flexbox Magic: Puts image and text side-by-side */
+.about-content {
+    display: flex;
+    align-items: flex-start; /* Aligns text to the top of the photo */
+    gap: 60px; /* Creates space between the photo and the words */
+}
+
+/* Styling the Image side */
+.bio-image {
+    flex: 0 0 400px; /* Keeps the photo at a fixed 400px width */
+}
+
+.bio-image img {
+    width: 100%; /* Makes image fill the 400px box */
+    height: auto;
+    border-radius: 4px; /* Optional: matches your video thumbnails */
+    display: block;
+}
+
+/* Styling the Text side */
+.bio-text {
+    flex: 1; /* Allows the text to take up the remaining space */
+}
+
+.bio-text h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #FF8C00; /* Uses your orange for the arrows/headers */
+}
+
+.bio-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #CCCCCC; /* Slightly dimmed for better readability */
+}
+
+/* Contact Button Styling */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #FF8C00;
+    color: #FF8C00;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #FF8C00;
+    color: #0B0F0F;
+}
+
+.socials {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.socials a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #FF8C00;
+}
+
+/* Mobile View: Stack them on top of each other if the screen is small */
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bio-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 40px;
+    }
+}
