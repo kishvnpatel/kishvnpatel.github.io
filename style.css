@@ -25,20 +25,39 @@ body {
     margin: 0;
 }
 
+/* Permanent Underline for all links */
 .nav-links a {
     text-decoration: none;
-    border-bottom: 2px solid transparent; /* The line is invisible at first */
+    color: #aaa; /* Standard grey color */
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     padding-bottom: 4px;
-    transition: border-color 0.3s ease; /* Makes the underline fade in smoothly */
+    border-bottom: 2px solid #ffffff; /* Permanent white underline */
+    transition: all 0.3s ease; /* Smooth transition for color and weight */
+    display: inline-block;
 }
 
+/* Hover Effect: Bold and Orange */
 .nav-links a:hover {
-    border-color: #ffffff; /* The line appears on hover */
+    color: #FF8C00; /* A vibrant orange */
+    border-bottom-color: #FF8C00; /* Makes the underline match the orange */
+    font-weight: bold;
+    /* Optional: Slightly increase scale to make the "bolding" feel smoother */
+    transform: translateY(-1px); 
 }
+
+/* Keeping the Active page orange too */
+.nav-links a.active {
+    color: #FF8C00;
+    border-bottom-color: #FF8C00;
+    font-weight: bold;
+}
+
 
 /* Center Logo */
 .logo img {
-    height: 200px; /* Adjust this to make your logo bigger or smaller */
+    height: 400px; /* Adjust this to make your logo bigger or smaller */
     width: auto;
     display: block;
     margin: 0 auto /* Keeps it centered */
@@ -66,7 +85,7 @@ nav a:hover { color: #fff; }
     display: grid;
     /* This creates exactly 2 columns */
     grid-template-columns: 1fr 1fr; 
-    gap: 10px; /* Space between the videos */
+    gap: 5px; /* Space between the videos */
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
