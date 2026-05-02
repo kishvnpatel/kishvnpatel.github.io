@@ -33,7 +33,7 @@ body {
 /* Permanent Underline for all links */
 .nav-links a {
     text-decoration: none;
-    color: #aaa; 
+    color: #FCF5E5; 
     font-size: 0.9rem;
     letter-spacing: 1px;
     text-transform: uppercase;
