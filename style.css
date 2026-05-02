@@ -1,6 +1,6 @@
 body {
     background-color: #0B0F0F;
-    color: #F5F5F5;
+    color: #F54927;
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
 }
@@ -38,7 +38,7 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     padding-bottom: 4px;
-    border-bottom: 2px solid #ffffff; 
+    border-bottom: 2px solid #F54927; 
     transition: all 0.3s ease; 
     display: inline-block;
 }
@@ -162,13 +162,13 @@ body {
     margin: 0 0 10px 0;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    color: #FF8C00; /* Uses your orange for the arrows/headers */
+    color: #FCF5E5; /* Uses your orange for the arrows/headers */
 }
 
 .bio-text p {
     margin-bottom: 20px;
     line-height: 1.8;
-    color: #CCCCCC; /* Slightly dimmed for better readability */
+    color: #FCF5E5; /* Slightly dimmed for better readability */
 }
 
 /* Contact Button Styling */
@@ -195,7 +195,7 @@ body {
 }
 
 .socials a {
-    color: #F5F5F5;
+    color: #FCF5E5;
     text-decoration: none;
 }
 
