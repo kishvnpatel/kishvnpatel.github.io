@@ -38,9 +38,10 @@ body {
 
 /* Center Logo */
 .logo img {
-    height: 50px; /* Adjust this to make your logo bigger or smaller */
+    height: 100px; /* Adjust this to make your logo bigger or smaller */
     width: auto;
     display: block;
+    margin: 0 auto /* Keeps it centered */
 }
 
 .nav-spacer {
