@@ -17,7 +17,7 @@ body {
     z-index: 1000;
     /* 2. Control the total height of the header area */
     height: 120px; 
-    overflow: visible; /* Allows the logo to pop out if needed */
+    overflow: hidden; /* Allows the logo to pop out if needed */
 
 }
 
